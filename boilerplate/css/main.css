@@ -1,2 +1,226 @@
 /* Importing Normalize css */
 @import url("normalize.css");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*  Custom CSS ---------------------------- */
+body {
+	font-family: "Open Sans", sans-serif;
+	background-color: rgba(250, 250, 250, 0.906);
+	background-image: url("../img/bg.png");
+}
+.heading {
+	font-size: 44px;
+	color: #075e54;
+	line-height: 60px;
+	font-weight: 700;
+	margin: 30px auto;
+}
+.container {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 30px;
+	text-align: center;
+}
+.flex {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.text_input {
+	width: 60%;
+	height: 30px;
+	outline: none;
+	font-weight: 300;
+	font-size: 18px;
+	background-color: rgba(240, 240, 240, 0.975);
+	line-height: 34px;
+	resize: none;
+	padding: 14px 24px;
+	border-radius: 2px;
+	border: none;
+	/* border: 5px dashed #5050f59e; */
+
+	box-shadow: 0 0 2px 2px rgb(218, 218, 218);
+	/* box-shadow: 0px -7px 17px 1px rgba(0, 0, 0, 0.56); */
+}
+.text_input::placeholder {
+	font-style: italic;
+}
+/* .text_input:focus {
+	background-color: rgba(231, 234, 244, 0.057);
+	box-shadow: inset 0px 0px 35px -19px rgba(214, 223, 255, 0.65),
+		0 0 4px 4px rgb(218, 218, 218);
+} */
+
+.container_2 {
+	margin: 30px 30px;
+	display: flex;
+	flex-wrap: wrap;
+	/* grid-template-columns: auto auto auto;
+	grid-template-rows: auto auto; */
+}
+.show_clip {
+	max-width: 25%;
+	border-radius: 5px;
+	padding: 20px;
+	line-height: 20px;
+	height: max-content;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	/* overflow: hidden; */
+	color: rgb(97, 97, 97);
+	background-color: rgba(255, 255, 255, 0.584);
+	display: inline-block;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.show_clip:hover {
+	color: rgb(12, 12, 12);
+}
+.show_clip_header {
+	color: #fff;
+}
+
+.clearAll {
+	padding: 16px;
+	position: fixed;
+	right: 20px;
+	top: 50px;
+	font-size: 24px;
+	font-weight: 600;
+	background-color: rgba(232, 67, 48, 0.571);
+	color: #fff;
+	border: none;
+	outline: none;
+	border-radius: 50%;
+}
+.clearAll:hover {
+	background-color: rgb(242, 60, 60);
+}
